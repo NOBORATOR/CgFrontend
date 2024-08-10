@@ -127,7 +127,12 @@ export function Overview({data}){
 
         <div className="bg-gray-50 rounded">
             <div className="m-2 mt-3 font-bold text-black text-lg">{`Rule :-`}</div>
-            <div className="m-2 ">{data.rule}</div>
+            <div className="m-2 ">{data.rule.split('\n').map((line, index) => (
+                    <React.Fragment key={index}>
+                        {line}
+                        <br />
+                    </React.Fragment>
+                ))}</div>
         </div>
 
         { obj_id==data.user_obj_id._id && 
