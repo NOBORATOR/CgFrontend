@@ -213,7 +213,7 @@ export function Register({email}) {
               name="user_id"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>User Id</FormLabel>
+                  <FormLabel>UNIQUE NUMBER</FormLabel>
                   <FormControl>
                     <Input type = "number" min = {100}placeholder="User ID" {...field} value={field.value ?? ""}
                     onChange={(e) => {
@@ -223,7 +223,7 @@ export function Register({email}) {
                     {/* For converting string to number */}
                   </FormControl>
                   <FormDescription>
-                    Enter Your User Id
+                    Enter any number
                   </FormDescription>
                   <FormMessage />
                 </FormItem>
@@ -237,7 +237,7 @@ export function Register({email}) {
               name="game_id"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Game Id</FormLabel>
+                  <FormLabel>InGame UID</FormLabel>
                   <FormControl>
                     <Input placeholder="Game Id" {...field} value = {field.value ?? ""}
                     onChange={(e) => {
@@ -246,7 +246,7 @@ export function Register({email}) {
                     }} />
                   </FormControl>
                   <FormDescription>
-                    Your Game UID
+                    Your Game UID (eg. 446262751)
                   </FormDescription>
                   <FormMessage />
                 </FormItem>
@@ -264,7 +264,7 @@ export function Register({email}) {
                     <Input  placeholder="Ingame_name" {...field} />
                   </FormControl>
                   <FormDescription>
-                    Your Ingame Name
+                    Your Ingame Name (eg. NOBORATOR)
                   </FormDescription>
                   <FormMessage />
                 </FormItem>
