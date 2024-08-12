@@ -32,8 +32,8 @@ export function Squad() {
     async function callSquad(){
         try {
             // console.log(formValues);
-            const response = await axios.put(`https://cgbackend.onrender.com/updateSquad`,{},{withCredentials: true});
-            const name = await axios.post(`https://cgbackend.onrender.com/auth`,{},{withCredentials: true})
+            const response = await axios.put(`https://cgbackend.onrender.com/api/v1/updateSquad`,{},{withCredentials: true});
+            const name = await axios.post(`https://cgbackend.onrender.com/api/v1/auth`,{},{withCredentials: true})
             // console.log("Response" , response);
             setname(name.data.data.in_game_name);
             // console.log(name)
@@ -54,7 +54,7 @@ export function Squad() {
     async function callSquad1(){
       setLoading(1);
         try {
-            const response = await axios.put(`https://cgbackend.onrender.com/updateSquad`, formValues,{withCredentials : true});
+            const response = await axios.put(`https://cgbackend.onrender.com/api/v1/updateSquad`, formValues,{withCredentials : true});
             toast.success("SuccessFull Updated");
         } catch (error) {
             console.error('Error submitting form:', error);
