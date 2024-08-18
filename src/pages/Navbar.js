@@ -52,7 +52,7 @@ export function Navbarhome() {
       <NavbarBrand>
      
             <AcmeLogo />
-            <p className="font-bold text-inherit" onClick={goToHome}>NOBO AND AYU</p>
+            <p className="font-bold text-inherit" onClick={goToHome}>BloIt</p>
         
       </NavbarBrand>
     </NavbarContent>
@@ -60,7 +60,7 @@ export function Navbarhome() {
     <NavbarContent className="hidden sm:flex gap-4" justify="center">
       <NavbarBrand>
         <AcmeLogo />
-        <p className="font-bold text-inherit cursor-pointer"  onClick={goToHome}>NOBO AND AYU</p>
+        <p className="font-bold text-inherit cursor-pointer"  onClick={goToHome}>BloIt</p>
       </NavbarBrand>
       <NavbarItem>
         <Link to="/tournament" style={{ color: 'inherit', textDecoration: 'none' }}>
