@@ -27,7 +27,7 @@ export function Profile(){
 
             const token = await axios.post('https://cgbackend.onrender.com/api/v1/auth',{},{withCredentials: true});
             setData(token.data);
-            console.log("DATA" , data);
+            // console.log("DATA" , data);
          
            
           }
