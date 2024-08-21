@@ -61,7 +61,7 @@ export function UpdatePlayerDetails() {
             
             toast.success("SuccessFull Updated");
         } catch (error) {
-            console.log('Error submitting form:', error);
+            // console.log('Error submitting form:', error);
             if(error?.response?.data?.message){
               setError(error?.response?.data?.message);
               // toast.error(error.message);
