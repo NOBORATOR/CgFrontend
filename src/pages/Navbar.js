@@ -40,7 +40,7 @@ export function Navbarhome() {
     // { name: 'Help & Feedback', path: '/help-feedback' },
     // { name: 'Login', path: '/logout' },
   ];
-  console.log(isAuthenticated);
+  // console.log(isAuthenticated);
 
   return (
     <Navbar isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen} >
