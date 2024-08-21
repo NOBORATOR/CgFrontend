@@ -82,7 +82,7 @@ export function Register({email}) {
       setLoading(0);
     }
     
-    console.log(data)
+    // console.log(data)
     // axios.post('https://cgbackend.onrender.com/api/v1/register', {
     //   email : data.email,
     //   password : data.password,
