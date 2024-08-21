@@ -35,7 +35,7 @@ export function OneTournament(){
           setLoading(false);
           // console.log(response.data.data);
         } catch (e) {
-          console.log(e);
+          // console.log(e);
           setError(e);
           setLoading(false);
         }
