@@ -33,7 +33,7 @@ export function Login(){
     function onSubmit(data){
     
       setLoading(1);
-      console.log(data.email,data.password);
+      // console.log(data.email,data.password);
       axios.post('https://cgbackend.onrender.com/api/v1/login', {
         email : data.email,
         password : data.password,
@@ -48,7 +48,7 @@ export function Login(){
           navigate('/',{replace : true});
         }
         else{
-            console.log(response.response.data)
+            // console.log(response.response.data)
         }
         
       })
@@ -56,8 +56,8 @@ export function Login(){
         setLoading(0);
         seterror(error);
       });
-      console.log("Error" , error);
-      console.log("loading" ,loading);
+      // console.log("Error" , error);
+      // console.log("loading" ,loading);
       setLoading(0);
     }
 
@@ -76,7 +76,7 @@ export function Login(){
     });
 
     if(loading){
-      console.log("LOADING");
+      // console.log("LOADING");
       return(
         <div className="w-[100vw] h-[400px] flex m-auto">
         <div className="max-w-[600px] m-auto ">
