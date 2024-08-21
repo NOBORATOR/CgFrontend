@@ -41,7 +41,7 @@ export function Player() {
                 }))
                 // console.log("SQUADS : ",squad.data.data);
                 setLoading(false);
-                console.log(squad?.data?.data?.user_obj_id?._id,"THIS",obj_id );
+                // console.log(squad?.data?.data?.user_obj_id?._id,"THIS",obj_id );
                 
                 setw(squad?.data?.data?.winner?.in_game_name);
                 if(squad?.data?.data?.user_obj_id?._id == obj_id){
@@ -51,7 +51,7 @@ export function Player() {
                 }
             }
             catch(e){
-                console.log(e);
+                // console.log(e);
                 // console.log(e?.response?.data)
                 if(e?.response?.data?.message){
                     toast.error(e.response.data.message);
@@ -67,7 +67,7 @@ export function Player() {
    },[obj_id,params.id])
 
    async function setWinner(id){
-    console.log(id);
+    // console.log(id);
       try{
         const match_id = params.id
         // console.log("Match_id" , match_id)
