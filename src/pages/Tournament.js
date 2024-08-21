@@ -30,7 +30,7 @@ export function Tournament() {
         setData(response.data.data);
         setLoading(false);
       } catch (e) {
-        console.log(e);
+        // console.log(e);
         setError(e);
         setLoading(false);
       }
