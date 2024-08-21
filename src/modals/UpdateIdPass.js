@@ -25,16 +25,16 @@ export function UpdateIdPass({id}){
         id: "",
         pass: "",
     });
-    console.log(id);
+    // console.log(id);
 
     async function updateDataIdPass(){
         try {
-            console.log("FORM VALUES " , formValues)
+            // console.log("FORM VALUES " , formValues)
             const response = await axios.post(`https://cgbackend.onrender.com/api/v1/createIdPass/${id}`, formValues,{withCredentials : true});
             toast.success("SuccessFull Updated");
         } catch (error) {
-            console.error('Error submitting form:', error);
-            console.log(error.response.data.message)
+            // console.error('Error submitting form:', error);
+            // console.log(error.response.data.message)
 
             if(error?.response?.data?.mesage){
                 setError(error.response.data.mesage);
