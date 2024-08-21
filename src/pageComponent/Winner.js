@@ -21,11 +21,11 @@ export function Winner(){
                   
                     setWinner(response.data?.data?.winner?.in_game_name);
                     setLoading(false);
-                    console.log("WINNER" ,winner)
+                    // console.log("WINNER" ,winner)
                     // console.log(squad?.data?.data?.user_obj_id?._id,"THIS",obj_id );
                 }
                 catch(e){
-                    console.log(e);
+                    // console.log(e);
                     // console.log(e?.response?.data)
                     if(e?.response?.data?.message){
                         toast.error(e.response.data.message);
