@@ -20,7 +20,7 @@ export function PlayerNav({player}){
         try{
 
             const res = await axios.post(`https://cgbackend.onrender.com/api/v1/send/${id}`,{},{withCredentials:true});
-            console.log(res)
+            // console.log(res)
             
             if(res?.data?.success){
                 toast.success("Request Sent");
@@ -30,7 +30,7 @@ export function PlayerNav({player}){
             
         }
         catch(e){
-            console.log(e)
+            // console.log(e)
             setDisabledButtons((prevDisabledButtons) =>
                 prevDisabledButtons.filter((btnIndex) => btnIndex !== index)
             );
