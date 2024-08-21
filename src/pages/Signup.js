@@ -54,7 +54,7 @@ export function Signup() {
     })
       .then(function (response) {
         if (response.status == 200) {
-          console.log(response);
+          // console.log(response);
           stem(data.emails);
           // sthandler(false);
         }
@@ -66,7 +66,7 @@ export function Signup() {
       .catch(function (error) {
         stlo(0);
         sthandler(1);
-        console.log(error);
+        // console.log(error);
         // toast.error(error.message);
         toast.error(error?.response?.data?.message);
         
