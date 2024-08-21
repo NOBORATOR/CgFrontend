@@ -48,7 +48,7 @@ export function Otp({email}) {
 
   async function onSubmit(data) {
     setLoading(1);
-    console.log(email,data.pin);
+    // console.log(email,data.pin);
 
     try{ 
       
@@ -56,13 +56,13 @@ export function Otp({email}) {
         email : email,
         otp : data.pin
       })
-      console.log("RESPONSE" ,response);
+      // console.log("RESPONSE" ,response);
       toast.success("SUCCESSFULLY MATCHED");
       stot(0);
       setLoading(0);
     }
     catch(e){
-      console.log(e.response.data.message);
+      // console.log(e.response.data.message);
       if(e?.response?.data?.message){
         toast.error(e?.response?.data?.message)
       }
