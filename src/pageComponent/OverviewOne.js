@@ -17,7 +17,7 @@ export function Overview({data}){
         const e = data.registered.filter(function(item) {
             return item["_id"] == obj_id;
        });
-       console.log("EXIST" ,e.length);
+       // console.log("EXIST" ,e.length);
 
        setExists(e.length==true?true:false);
     },[])
@@ -66,7 +66,7 @@ export function Overview({data}){
         }
     }
     if(loading){
-        console.log("LOADING");
+        // console.log("LOADING");
         return(
           <div className="w-[100vw] h-[400px] flex m-auto">
           <div className="max-w-[600px] m-auto ">
