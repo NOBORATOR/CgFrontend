@@ -25,7 +25,9 @@ export function Players(){
                     // response.data.data.
                     const pl = response?.data?.data;
                     pl.map((data)=>{
-                        player.push(data);
+                        if(data.user_obj_id){
+                            player.push(data);
+                        }
                     })
                     setLoading(false);
                     console.log("Player",player)
