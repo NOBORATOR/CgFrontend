@@ -33,7 +33,7 @@ export function Request() {
                     const d = data.sender_id;
                     d.status = data.status;
                     player.push(d);
-                    console.log(d);
+                    // console.log(d);
                 })
                 setLoading(false);
                 // console.log("TOTAL",player.length)
@@ -41,7 +41,7 @@ export function Request() {
                 // console.log(squad?.data?.data?.user_obj_id?._id,"THIS",obj_id );
             }
             catch (e) {
-                console.log(e);
+                // console.log(e);
                 // console.log(e?.response?.data)
                 if (e?.response?.data?.message) {
                     toast.error(e.response.data.message);
@@ -55,7 +55,7 @@ export function Request() {
         setLoading(false);
 
         getallPlayer();
-        console.log("DATA :-", player)
+        // console.log("DATA :-", player)
     }, [])
 
 
@@ -74,7 +74,7 @@ export function Request() {
 
         }
         catch (e) {
-            console.log(e)
+            // console.log(e)
             setDisabledButtons((prevDisabledButtons) =>
                 prevDisabledButtons.filter((btnIndex) => btnIndex !== index)
             );
@@ -105,7 +105,7 @@ export function Request() {
 
         }
         catch (e) {
-            console.log(e);
+            // console.log(e);
             setLoading(false)
             setDisabledButtons((prevDisabledButtons) =>
                 prevDisabledButtons.filter((btnIndex) => btnIndex !== index)
