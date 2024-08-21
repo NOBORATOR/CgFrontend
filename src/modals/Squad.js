@@ -57,7 +57,7 @@ export function Squad() {
             const response = await axios.put(`https://cgbackend.onrender.com/api/v1/updateSquad`, formValues,{withCredentials : true});
             toast.success("SuccessFull Updated");
         } catch (error) {
-            console.error('Error submitting form:', error);
+            // console.error('Error submitting form:', error);
             setError(error);
             toast.error(error.message);
         }
@@ -83,7 +83,7 @@ export function Squad() {
     // };
 
     if(loading){
-      console.log("LOADING");
+      // console.log("LOADING");
       return(
         <div className="w-[100vw] h-[400px] flex m-auto">
         <div className="max-w-[600px] m-auto ">
