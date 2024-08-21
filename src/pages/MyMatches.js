@@ -33,7 +33,7 @@ export function MyMatches(){
         setLoading(false);
         // console.log(response.data.data.game_played)
       } catch (e) {
-        console.log(e);
+        // console.log(e);
         setError(e);
         setLoading(false);
       }
