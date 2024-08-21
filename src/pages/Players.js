@@ -30,12 +30,12 @@ export function Players(){
                         }
                     })
                     setLoading(false);
-                    console.log("Player",player)
+                    // console.log("Player",player)
                     setLoading(0);
                     // console.log(squad?.data?.data?.user_obj_id?._id,"THIS",obj_id );
                 }
                 catch(e){
-                    console.log(e);
+                    // console.log(e);
                     // console.log(e?.response?.data)
                     if(e?.response?.data?.message){
                         toast.error(e.response.data.message);
